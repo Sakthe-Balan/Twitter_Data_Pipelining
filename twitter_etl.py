@@ -47,3 +47,4 @@ def run_twitter_etl():
     #add iam permisiion rpoles to the ec2 the s3full access and ec2 full access
     #after that open airflow select twitter_dags and then go to the graph part then click run then you can see that yur s3 will get the data
     #all data is in cd airflow and then the sudo nano files. the codes have that
+    #https://www.youtube.com/watch?v=q8q3OFFfY6c&t=1572s
