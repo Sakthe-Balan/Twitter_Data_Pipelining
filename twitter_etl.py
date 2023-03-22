@@ -42,4 +42,8 @@ def run_twitter_etl():
         list.append(refined_tweet)
 
     df = pd.DataFrame(list)
-    df.to_csv('refined_tweets.csv')
+    df.to_csv('s3://sakthe-twitter-data-pipelining/refined_tweets.csv')
+
+    #add iam permisiion rpoles to the ec2 the s3full access and ec2 full access
+    #after that open airflow select twitter_dags and then go to the graph part then click run then you can see that yur s3 will get the data
+    #all data is in cd airflow and then the sudo nano files. the codes have that
